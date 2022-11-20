@@ -15,6 +15,18 @@ Notes:
         - Recursion canb be slow.
 """
 
-if __name__ == "main":
-    pass
-  
+def factorial(n):
+    """Calculate the factorial of a number.
+
+    Args:
+        n (int): The number to calculate the factorial of.
+
+    Returns:
+        int: The factorial of the number.
+    """
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+if __name__ == "__main__":
+    print("Factorial of 5 is: ", factorial(5))
