@@ -12,7 +12,7 @@ Notes:
         - If time and space complexity matters for us.
         - Recursion uses more memory. If we use embedded memory. For example an application that
         takes more memory in the phone is not efficient.
-        - Recursion canb be slow.
+        - Recursion can be slow.
 """
 
 def get_factorial(number: int) -> int:
