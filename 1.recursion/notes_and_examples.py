@@ -15,21 +15,20 @@ Notes:
         - Recursion canb be slow.
 """
 
-def factorial(n):
+def get_factorial(number: int) -> int:
     """Calculate the factorial of a number.
 
     Args:
-        n (int): The number to calculate the factorial of.
+        number (int): The number to calculate the factorial of.
 
     Returns:
         int: The factorial of the number.
     """
-    assert n >= 0 and int(n) == n, "The number must be positive integer only!"
-    if n in [0, 1]:
+    assert number >= 0 and int(number) == number, "The number must be positive integer only!"
+    if number in [0, 1]:
         return 1
-    return n * factorial(n - 1)
+    return number * get_factorial(number - 1)
 
 if __name__ == "__main__":
-    # Ask for a number
-    number = int(input("Enter a number: "))
-    print(f"Factorial of {number} is {factorial(number)}")
+    input_number = int(input("Enter a number: "))
+    print(f"Factorial of {input_number} is {get_factorial(input_number)}")
