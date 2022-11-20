@@ -13,6 +13,11 @@ Notes:
         - Recursion uses more memory. If we use embedded memory. For example an application that
         takes more memory in the phone is not efficient.
         - Recursion can be slow.
+
+    Steps to solve a recursion problem:
+        - Step 1: Recursive case - the flow
+        - Step 2: Base case - the exit condition or stopping criteria
+        - Step 3: Unintentional case - the error handling or constraints
 """
 
 def get_factorial(number: int) -> int:
