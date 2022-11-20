@@ -24,7 +24,8 @@ def factorial(n):
     Returns:
         int: The factorial of the number.
     """
-    if n == 0:
+    assert n >= 0 and int(n) == n, "The number must be positive integer only!"
+    if n in [0, 1]:
         return 1
     return n * factorial(n - 1)
 
