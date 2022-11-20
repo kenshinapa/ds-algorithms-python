@@ -29,6 +29,21 @@ def get_factorial(number: int) -> int:
         return 1
     return number * get_factorial(number - 1)
 
+def get_fibonacci(number: int) -> int:
+    """Calculate the fibonacci of a number.
+
+    Args:
+        number (int): The number to calculate the fibonacci of.
+
+    Returns:
+        int: The fibonacci of the number.
+    """
+    assert number >= 0 and int(number) == number, "The number must be positive integer only!"
+    if number in [0, 1]:
+        return number
+    return get_fibonacci(number - 1) + get_fibonacci(number - 2)
+
 if __name__ == "__main__":
     input_number = int(input("Enter a number: "))
-    print(f"Factorial of {input_number} is {get_factorial(input_number)}")
+    # print(f"Factorial of {input_number} is {get_factorial(input_number)}")
+    print(f"Fibonacci of {input_number} is {get_fibonacci(input_number)}")
