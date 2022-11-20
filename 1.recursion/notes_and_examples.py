@@ -29,4 +29,6 @@ def factorial(n):
     return n * factorial(n - 1)
 
 if __name__ == "__main__":
-    print("Factorial of 5 is: ", factorial(5))
+    # Ask for a number
+    number = int(input("Enter a number: "))
+    print(f"Factorial of {number} is {factorial(number)}")
